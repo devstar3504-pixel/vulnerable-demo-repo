@@ -6,5 +6,3 @@ def login(user, pwd):
     return conn.execute(query).fetchone()
 
 
-def unsafe_query(q):
-    return f"SELECT * FROM data WHERE id = {q}"
